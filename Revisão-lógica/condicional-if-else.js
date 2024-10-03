@@ -9,16 +9,20 @@ let paisPresente = true;
 let comprouBilhete = true;
 const podeViajar = (idade >= 18 || paisPresente) && comprouBilhete;
 
-if(!comprouBilhete){
-    console.log("Não comprou o bilhete!")
-}
-else{
-    if(idade >= 18){
-        console.log("É maior de 18 anos")
-    }else{
-        console.log("É menor de idade e só pode viajar na com os responsáveis.")
-    }  
-}
+let msgMaiorIdade =  (idade >= 18) ? "É maior de idade": "È menor de idade" // Esse é o operador ternario, ele pode ser uma opção de uso em relação ao if e else que avalia a idade.
+
+console.log(msgMaiorIdade)
+
+// if(!comprouBilhete){
+//     console.log("Não comprou o bilhete!")
+// }
+// else{
+//     if(idade >= 18){
+//         console.log("É maior de 18 anos")
+//     }else{
+//         console.log("É menor de idade e só pode viajar na com os responsáveis.")
+//     }  
+// }
 
 let nota1 = 8;
 let nota2 = 7;
